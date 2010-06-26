@@ -1,0 +1,9 @@
+*~
+*.swp
+.kdev4/
+qtcreator-build/
+build/
+CMakeLists.txt.user
+refman.pdf
+Doxyfile
+Macaulay2Editor.kdev4

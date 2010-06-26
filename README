@@ -1,0 +1,39 @@
+Macaulay2Editor
+Advanced text editor for Macaulay2.
+
+run dependencies:
+  libgdbm
+  kde4
+  sqlite3
+  qt
+
+build dependencies:
+  tools: 
+    cmake
+
+  libraries:
+    libgdbm-dev
+    kde4-devel
+    sqlite3-dev
+    qt4-dev
+    boost > 1.40.0
+
+
+HOWTO build.
+install all dependencies. 
+create folder "build" in source directory 
+goto that folder
+run "cmake .."
+
+
+INSTALL:
+there is only manual installation for this project.
+copy editorui.rc to /home/"username"/.M2E/
+enable autocompletion by copying macaulay2.xml to /home/"username"/.kde/share/apps/katepart/syntax/
+then just run the editor executable.
+
+
+
+
+
+
