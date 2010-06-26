@@ -6,6 +6,7 @@ run dependencies:
   kde4
   sqlite3
   qt
+  Macaulay2
 
 build dependencies:
   tools: 
