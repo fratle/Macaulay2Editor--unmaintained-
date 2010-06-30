@@ -12,7 +12,7 @@ INCLUDE(${QT_USE_FILE})
 
 # set default cmake build type to RelWithDebInfo (None Debug Release RelWithDebInfo MinSizeRel)
 IF( NOT CMAKE_BUILD_TYPE )
-   SET( CMAKE_BUILD_TYPE "Release" )
+   SET( CMAKE_BUILD_TYPE "Debug" )
 ENDIF()
 
 # require proper c++
