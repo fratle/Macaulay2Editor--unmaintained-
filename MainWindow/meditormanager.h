@@ -37,7 +37,7 @@ public:
 private:
     int m_index;
 
-    KTextEditor::Editor *editor;
+    KTextEditor::Editor *m_editor;
 
     QList<MEditor*> editors;
     MEditor *activeEditor;

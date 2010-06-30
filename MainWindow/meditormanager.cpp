@@ -5,7 +5,7 @@
 MEditorManager::MEditorManager(QObject *parent) :
         QObject(parent)
 {
-    editor = KTextEditor::EditorChooser::editor();
+    m_editor = KTextEditor::EditorChooser::editor();
     MainWindow *mwin = MainWindow::getInstance();
     connect(this, SIGNAL(newEditorCreated(KTextEditor::View*)), mwin, SLOT(editorCreated(KTextEditor::View*)));
 
@@ -27,7 +27,7 @@ KTextEditor::Document* MEditorManager::getCurrentDocument() {
 }
 
 KTextEditor::View* MEditorManager::createEditor(QString filename) {
-    KTextEditor::Document *new_doc = editor->createDocument(this);
+    KTextEditor::Document *new_doc = m_editor->createDocument(this);
     MEditor *editor =  new MEditor(new_doc);
     editors.append(editor);
 
