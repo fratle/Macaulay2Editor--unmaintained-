@@ -299,7 +299,8 @@ void MainWindow::firstRun() {
     QFileInfo macaulayExe(QDir("/usr/bin"), "M2");
 
     settings.beginGroup("Autocomplete");
-    settings.setValue("Autocomplete/onoff", "true");
+    settings.setValue("onoff", "true");
+    settings.setValue("automatic", "false");
     settings.endGroup();
 
     if (!settings.value("MainWindow/Directory").toString().isEmpty()) {
