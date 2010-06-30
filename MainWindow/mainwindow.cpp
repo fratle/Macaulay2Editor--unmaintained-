@@ -37,7 +37,6 @@ MainWindow::MainWindow(QWidget * parent)
     setupDockWidgets();
     setupActions();
     setupEditorDocsViews();
-    setupContextMenu(editorManager->getCurrentView());
 
     terminalDock = new MProcessShellWidget(this);
     terminalDock->setObjectName("TerminalDock");
