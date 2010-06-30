@@ -32,10 +32,11 @@ MainWindow::MainWindow(QWidget * parent)
     m_tab->setMovable(true);
     m_tab->resize(800,600);
 
-    setupEditorDocsViews();
+    
     setCentralWidget(m_tab);
     setupDockWidgets();
     setupActions();
+    setupEditorDocsViews();
     setupContextMenu(editorManager->getCurrentView());
 
     terminalDock = new MProcessShellWidget(this);
