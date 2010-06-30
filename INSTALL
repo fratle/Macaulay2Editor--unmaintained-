@@ -1,0 +1,5 @@
+INSTALL:
+There is currently only manual installation for this project.
+copy editorui.rc to /home/"username"/.M2E/
+enable autocompletion by copying macaulay2.xml to /home/"username"/.kde/share/apps/katepart/syntax/
+then just run the editor executable.
